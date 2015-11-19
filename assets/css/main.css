@@ -24,6 +24,7 @@ textarea {
 }
 
 body {
+	background-color: #2b2b2b;
     font-size: 1em;
     line-height: 1.4;
 }
@@ -155,7 +156,7 @@ hr:before {
 }
 
 a img {
-    background: white;
+    background: transparent;
 }
 
 .odd a img {
@@ -276,14 +277,14 @@ a:after {
    ========================================================================== */
 
 #headerwrap {
-	background: url(../img/header_bg.jpg) no-repeat center top;
-	margin-top: 0px;
+/* 	background: url(../img/header_bg.jpg) no-repeat center top; */
+	background: #fff;
+	margin-top: -50px;
 	padding-top:40px;
 	text-align:center;
 	background-attachment: relative;
 	background-position: center center;
-	height: 100%;
-	max-width: 100%;
+	width: 100%;
 	
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
@@ -298,7 +299,7 @@ a:after {
 
 #headerwrap h1 {
 	color:#ffffff;
-	margin-top: 290px;
+	margin-top: 90px;
 	padding-bottom: 30px;
 	letter-spacing: 8px;
 	font-size: 100px;
@@ -632,6 +633,14 @@ a:after {
 }
 
 @media screen and (max-width:769px) {
+	#headerwrap {
+		background: #fff;
+		padding-top:100px;
+		text-align:center;
+		background-attachment: relative;
+		background-position: center center;
+		width: 100%;
+	}
 	#headerwrap h1 {
 		font-size: 80px;
 	}
@@ -642,10 +651,41 @@ a:after {
 	#modal-desc {
 		display: none;
 	}
+	h2 {
+		padding-left:10px;
+	}
+	.smoothScroll {
+		padding-bottom:15px;
+	}
 }
 
 /*ipad portrait*/
 @media screen and (max-width: 600px) {
 
     .modal-desc {display:none;}
+}
+
+
+/* ==========================================================================
+   CUSTOM STYLES
+   ========================================================================== */
+
+.btn.outline {
+    background: none;
+    padding: 12px 22px;
+}
+
+.btn-primary.outline {
+    border: 2px solid #0099cc;
+    color: #0099cc;
+}
+
+.btn-primary.outline:hover, .btn-primary.outline:focus, .btn-primary.outline:active, .btn-primary.outline.active, .open > .dropdown-toggle.btn-primary {
+    color: #33a6cc;
+    border-color: #33a6cc;
+}
+.btn-primary.outline:active, .btn-primary.outline.active {
+    border-color: #007299;
+    color: #007299;
+    box-shadow: none;
 }
