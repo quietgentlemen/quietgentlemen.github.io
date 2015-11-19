@@ -630,6 +630,7 @@ a:after {
 /*ipad portrait*/
 @media only screen and (min-device-width:768px) and (max-device-width : 1024px) and (orientation : portrait){
 	.header{background-attachment: scroll;}
+	
 }
 
 @media screen and (max-width:769px) {
@@ -656,6 +657,9 @@ a:after {
 	}
 	.smoothScroll {
 		padding-bottom:15px;
+	}
+	.audio {
+		display: none;
 	}
 }
 
